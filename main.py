@@ -1,4 +1,14 @@
+## This is a program to calculate the area of a room.
+## The program first takes 3 inputs (length, breadth and height),
+## Calculates the area of according the the provided input
+## and then prints out the results with a formatted string.
+## We will create a simple function to achieve this.
+
 def get_area(length, breadth, height):
+    '''
+    This function takes 3 arguments (length, breadth and height)
+    and calculates the area of the room.
+    '''
     area = length * breadth * height
     return area
 
