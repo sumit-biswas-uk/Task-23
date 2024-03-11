@@ -12,9 +12,21 @@ def get_area(length, breadth, height):
     area = length * breadth * height
     return area
 
-length = int(input("Please input the length of the room (in cm): "))
-breadth = int(input("Please input the breadth of the room (in cm): "))
-height = int(input("Please input the height of the room (in cm): "))
+def get_num(num):    
+    while True:
+        try:
+            int(num)
+            return int(num)
+        except ValueError:
+            print("Please only enter whole numbers")
+            num = input("Please try again")
+
+            
+
+
+length = get_num(input("Please input the length of the room (in cm): "))
+breadth = get_num(input("Please input the breadth of the room (in cm): "))
+height = get_num(input("Please input the height of the room (in cm): "))
 
 area = get_area(length, breadth, height)
 
